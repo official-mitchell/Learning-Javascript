@@ -13,11 +13,44 @@
 <p id="demo"></p>
 
 
-// Being able to compute with inner html
+// #1 EXAMPLE - Being able to compute with inner html
 
 <script>
 document.getElementById("demo").innerHTML = 5 + 6;
 </script>
+  
+  // #1 -  you can also write this same thing by shortening that code with a <script> </script>
+  
+<script>
+document.write5 + 6);
+</script>
 
+  
+// #1 - This is a different result
+
+  <button onclick="document.write(5 + 6)">Try it</button>
+  
+// #1 -And this too 
+
+  <script> 
+    window.alert(5 + 6); 
+  </script>
+
+  <p> #1 - Press F12 for page source, then Select "Console" in the debugger menu. Then click Run again.</p>
+  
+<script>
+console.log(5 + 6);
+</script>  
+  
+  #2 - <script>
+var x, y, z;
+x = 5;
+y = 6;
+z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+  
+  
+ 
 </body>
 </html> 
